@@ -35,6 +35,7 @@
         <!-- <img src="./assets/img/brand/blue.png" class="navbar-brand-img" alt="..."> -->
         <p class="text-primary" style="font-weight: bold; font-size: 38px;">SECRETARY</p>
       </a>
+      <p class="text-center" style="font-weight: bold; font-size: 15px;">Insert Clinic</p>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
         <li class="nav-item dropdown">
@@ -48,6 +49,10 @@
               <h6 class="text-overflow m-0">Welcome!</h6>
             </div>
             <div class="dropdown"></div>
+            <a href="./profile.html" class="dropdown-item">
+              <i class="ni ni-circle-08"></i>
+              <span>User Profile</span>
+            </a>
             <a href="#!" class="dropdown-item">
               <i class="ni ni-user-run"></i>
               <span>Logout</span>
@@ -64,6 +69,7 @@
               <a href="../index-sec.html">
                 <p class="text-primary" style="font-weight: bold; font-size: 35px;">SECRETARY</p>
               </a>
+              <p class="text-center" style="font-weight: bold; font-size: 15px;">Insert Clinic</p>
             </div>
             <div class="col-6 collapse-close">
               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
@@ -73,17 +79,6 @@
             </div>
           </div>
         </div>
-        <!-- Form -->
-        <form class="mt-4 mb-3 d-md-none">
-          <div class="input-group input-group-rounded input-group-merge">
-            <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <span class="fa fa-search"></span>
-              </div>
-            </div>
-          </div>
-        </form>
         <!-- Navigation -->
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -117,6 +112,11 @@
                 </ul>
             </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./profile.html">
+            <i class="ni ni-single-02 text-danger"></i> Profile
+          </a>
+        </li>
         </ul>
       </div>
     </div>
@@ -128,17 +128,6 @@
       <div class="container-fluid">
         <!-- Brand -->
         <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./pending-appointments.html">Pending Appointments</a>
-        <!-- Form -->
-        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-          <div class="form-group mb-0">
-            <div class="input-group input-group-alternative">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
-              </div>
-              <input class="form-control" placeholder="Search" type="text">
-            </div>
-          </div>
-        </form>
         <!-- User -->
         <ul class="navbar-nav align-items-center d-none d-md-flex">
           <li class="nav-item dropdown">
@@ -154,6 +143,10 @@
                 <h6 class="text-overflow m-0">Welcome!</h6>
               </div>
               <div class="dropdown"></div>
+              <a href="./profile.html" class="dropdown-item">
+                <i class="ni ni-circle-08"></i>
+                <span>User Profile</span>
+              </a>
               <a href="#!" class="dropdown-item">
               <i class="ni ni-user-run"></i>
               <span>Logout</span>
@@ -186,7 +179,9 @@
               <table class="table align-items-center table-dark table-flush">
                 <thead class="thead-dark">
                   <tr>
+                    <th scope="col">Appointment No.</th>
                     <th scope="col">Client Name</th>
+                    <th scope="col">Contact No.</th>
                     <th scope="col">Date</th>
                     <th scope="col">Time Schedule</th>
                     <th scope="col">Doctor</th>
@@ -197,7 +192,13 @@
                 <tbody>
                   <tr>
                     <td>
+                      1
+                    </td>
+                    <td>
                       Ivan Dale D. Badbaden
+                    </td>
+                    <td>
+                      09216144974
                     </td>
                     <td>
                       Monday
