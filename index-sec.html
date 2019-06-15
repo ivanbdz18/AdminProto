@@ -168,7 +168,7 @@
                     <div class="col-8">
                         <h3 class="text-white mb-0">Clinic Schedules</h3>
                     </div>
-                    <div class="col-4 text-right" >
+                    <div class="col text-right" >
                         <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-addSched">Add Schedule</button>
                     </div>
                 </div>
@@ -213,6 +213,49 @@
           </div>
         </div>
       </div>
+      <br>
+
+        <div class="col">
+            <div class="card bg-default shadow">
+              <div class="card-header bg-transparent border-0">
+                  <div class="row align-items-center">
+                      <div class="col-8">
+                          <h3 class="text-white mb-0">List of Doctors</h3>
+                      </div>
+                      <div class="col text-right" >
+                          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-addDoc">Add Doctor</button>
+                      </div>
+                  </div>
+            </div>
+              <div class="table-responsive">
+                <table class="table align-items-center table-dark table-flush">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Doctor's ID</th>
+                      <th scope="col">Doctor's Name</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        Calvin Khen Lacson
+                      </td>
+                      <td>
+                          <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-editDoc">Edit</button>
+                          <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-deleteDoc">Delete</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
 
       <!-- Footer -->
       <footer class="footer">
@@ -225,15 +268,15 @@
         </div>
       </footer>
 
-      <!--add schedule modal-->
+        <!--add doctor modal-->
 <div class="row">
     <div class="col-md-4">
-        <div class="modal fade" id="modal-addSched" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+        <div class="modal fade" id="modal-addDoc" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
       <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
           <div class="modal-content">
   
               <div class="modal-header">
-                  <h2 class="modal-title" id="modal-title-default">Add Schedule:</h2>
+                  <h2 class="modal-title" id="modal-title-default">Add Doctor:</h2>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">×</span>
                   </button>
@@ -258,6 +301,127 @@
                                       <label class="form-control-label" for="">Last Name:</label>
                                       <input type="text" name="" id="" class="form-control form-control-alternative"  required autofocus>
                                   </div>
+                                </div>                             
+                                          
+                                  <div class="modal-footer">
+                                      <button type="submit" class="btn btn-success mt-4">Add Doctor</button>
+                                      <button type="button" class="btn btn-danger  ml-auto" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                          </form>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
+    <!--end add doctor modal-->
+
+    <!--edit doctor modal-->
+<div class="row">
+    <div class="col-md-4">
+        <div class="modal fade" id="modal-editDoc" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+      <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+          <div class="modal-content">
+  
+              <div class="modal-header">
+                  <h2 class="modal-title" id="modal-title-default">Edit Doctor:</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                  </button>
+              </div>
+  
+              <div class="modal-body">
+                      <form method="post" action="" autocomplete="off">
+                        
+                          <div class="pl-lg-4">
+                            <h3>Doctor's Name</h3>
+                              <div class="form-group">
+                                  <label class="form-control-label" for="">First Name:</label>
+                                  <input type="text" name="" id="" class="form-control form-control-alternative" value="Calvin Khen"  required autofocus>
+                              </div>
+                              
+                              <div class="form-group">
+                                  <label class="form-control-label" for="">Middle Name:</label>
+                                  <input type="text" name="" id="" class="form-control form-control-alternative" value="C." required autofocus>
+                              </div>
+
+                              <div class="form-group">
+                                  <label class="form-control-label" for="">Last Name:</label>
+                                  <input type="text" name="" id="" class="form-control form-control-alternative" value="Lacson" required autofocus>
+                              </div>
+                            </div>                             
+                                      
+                              <div class="modal-footer">
+                                  <button type="submit" class="btn btn-success mt-4">Save Changes</button>
+                                  <button type="button" class="btn btn-danger  ml-auto" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
+    <!--end edit doctor modal-->
+
+    <!-- delete doctor account modal -->
+    <div class="modal fade" id="modal-deleteDoc" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modal-title-default">Delete Doctor</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    
+                    <p>Are you sure you want to <span class="text-danger" style="font-weight: bold;">DELETE</span> this Doctor?</p>
+                    
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Confirm</button>
+                    <button type="button" class="btn btn-danger  ml-auto" data-dismiss="modal">Close</button> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- end delete doctor modal -->
+
+      <!--add schedule modal-->
+<div class="row">
+    <div class="col-md-4">
+        <div class="modal fade" id="modal-addSched" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+      <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+          <div class="modal-content">
+  
+              <div class="modal-header">
+                  <h2 class="modal-title" id="modal-title-default">Add Schedule:</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                  </button>
+              </div>
+  
+              <div class="modal-body">
+                          <form method="post" action="" autocomplete="off">
+                            
+                              <div class="pl-lg-4">
+                                <h3>Doctor's Name</h3>
+                                <div class="form-group">
+                                    <select class="form-control form-control-alternative" name="" id="" required autofocus>
+                                        <option value="">Select Doctor</option>
+                                        <option value="Dr. Calvin Khen Lacson">Dr. Calvin Khen Lacson</option>
+                                        <option value="Dr. Erandy Magandaleno">Dr. Erandy Magdaleno</option>
+                                    </select>
+                                </div>
 
                                   <hr class="my-3">
                                 <h3>Schedule</h3>
@@ -329,20 +493,13 @@
                           <form method="post" action="" autocomplete="off">
                             
                               <div class="pl-lg-4">
-                                <h3>Doctor's Name</h3>
+                                  <h3>Doctor's Name</h3>
                                   <div class="form-group">
-                                      <label class="form-control-label" for="">First Name:</label>
-                                      <input type="text" name="" id="" class="form-control form-control-alternative" value="Calvin Khen"  required autofocus>
-                                  </div>
-                                  
-                                  <div class="form-group">
-                                      <label class="form-control-label" for="">Middle Name:</label>
-                                      <input type="text" name="" id="" class="form-control form-control-alternative" value="C." required autofocus>
-                                  </div>
-
-                                  <div class="form-group">
-                                      <label class="form-control-label" for="">Last Name:</label>
-                                      <input type="text" name="" id="" class="form-control form-control-alternative" value="Lacson" required autofocus>
+                                      <select class="form-control form-control-alternative" name="" id="" required autofocus>
+                                          <option value="">Select Doctor</option>
+                                          <option value="Dr. Calvin Khen Lacson">Dr. Calvin Khen Lacson</option>
+                                          <option value="Dr. Erandy Magandaleno">Dr. Erandy Magdaleno</option>
+                                      </select>
                                   </div>
 
                                   <hr class="my-3">
